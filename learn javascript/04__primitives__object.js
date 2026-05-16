@@ -30,4 +30,8 @@ const item = {
 }
 console.log(item["rohan"]);
 // OUTPUT
+<<<<<<< HEAD
 // 67
+=======
+// 67
+>>>>>>> 63f11c1664ecbf62ba3d9fea3b5d7c57560b9064
