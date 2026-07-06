@@ -27,3 +27,4 @@ let num=[551,26,43,45,65,36,57,866,96]
 // let newnum=num.slice(3) 
 let  newnum=num.slice(3,5) 
 console.log(newnum);
+ 
