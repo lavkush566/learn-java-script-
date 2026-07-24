@@ -9,12 +9,13 @@ body{
     display:flex;
     justify-content:center;
     align-item: center;
-    background:#322f2f;
+    background:#111;
     font-family:Arial, Helvetica, sans-serif;
 
 }
 .clock{
-    backgroung:#26a8bf;
+    backgroung:cyan;
+    color:cyan;
     padding:30px 60px;
     border-radius:15px;
     box-shadow:0 0 20px cyan;
