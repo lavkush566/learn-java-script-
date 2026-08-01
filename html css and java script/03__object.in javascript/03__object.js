@@ -16,6 +16,10 @@ let d=undefined;
     let b='this'
     console.log(b);
 }
+<<<<<<< HEAD
 console.log(b);
 
 //this is a commit
+=======
+console.log(b);
+>>>>>>> 23071b7e79e57e7084044a1fc3bb39d653f1f943
