@@ -29,3 +29,5 @@ console.log(fr[4]);
 console.log(fr[5]);
 // fr [4]="0" // it will not work because strings are immutable in javascript
 console.log(fr);
+
+// string methods
