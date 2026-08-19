@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Live Market Dashboard</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">Market<span>Live</span></div>
+
+    <div class="status">
+      <span class="dot"></span>
+      Live Data
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div>
+        <p class="label">LIVE MARKET</p>
+        <h1>Crypto Dashboard</h1>
+        <p class="subtitle">
+          Real-time market data from a public API
+        </p>
+      </div>
+
+      <button id="refreshBtn">↻ Refresh</button>
+    </section>
+
+    <section class="cards">
+
+      <div class="card">
+        <p>Bitcoin</p>
+        <h2 id="btcPrice">Loading...</h2>
+        <span id="btcChange">--</span>
+      </div>
+
+      <div class="card">
+        <p>Ethereum</p>
+        <h2 id="ethPrice">Loading...</h2>
+        <span id="ethChange">--</span>
+      </div>
+
+      <div class="card">
+        <p>Solana</p>
+        <h2 id="solPrice">Loading...</h2>
+        <span id="solChange">--</span>
+      </div>
+
+      <div class="card">
+        <p>Total Market Cap</p>
+        <h2 id="marketCap">Loading...</h2>
+      </div>
+
+    </section>
+
+    <section class="chart-section">
+
+      <div class="chart-header">
+        <div>
+          <p class="label">BITCOIN</p>
+          <h2>Price Chart</h2>
+        </div>
+
+        <div class="price-info">
+          <strong id="chartPrice">$--</strong>
+          <span id="lastUpdated">Updating...</span>
+        </div>
+      </div>
+
+      <div class="chart-wrapper">
+        <canvas id="marketChart"></canvas>
+      </div>
+
+    </section>
+
+    <section class="table-section">
+
+      <h2>Market Overview</h2>
+
+      <div class="table-container">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Coin</th>
+              <th>Price</th>
+              <th>24h Change</th>
+              <th>Market Cap</th>
+            </tr>
+          </thead>
+
+          <tbody id="marketTable">
+            <tr>
+              <td colspan="5">Loading market data...</td>
+            </tr>
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    MarketLive © 2026
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
