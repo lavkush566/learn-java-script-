@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacker Terminal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <canvas id="matrix"></canvas>
+
+  <div class="terminal">
+
+    <div class="topbar">
+      <div class="lights">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="title">
+        root@system:~
+      </div>
+    </div>
+
+    <div class="content">
+
+      <div class="ascii">
+<pre>
+██╗  ██╗ █████╗  ██████╗██╗  ██╗
+██║  ██║██╔══██╗██╔════╝██║ ██╔╝
+███████║███████║██║     █████╔╝
+██╔══██║██╔══██║██║     ██╔═██╗
+██║  ██║██║  ██║╚██████╗██║  ██╗
+╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
+</pre>
+      </div>
+
+      <div class="terminal-info">
+        <p>> Initializing secure terminal...</p>
+        <p>> Loading modules...</p>
+        <p>> Establishing encrypted connection...</p>
+        <p class="success">> SYSTEM READY ✓</p>
+      </div>
+
+      <div class="stats">
+
+        <div class="stat">
+          <span>CPU</span>
+          <strong id="cpu">42%</strong>
+        </div>
+
+        <div class="stat">
+          <span>MEMORY</span>
+          <strong id="memory">68%</strong>
+        </div>
+
+        <div class="stat">
+          <span>NETWORK</span>
+          <strong id="network">ONLINE</strong>
+        </div>
+
+      </div>
+
+      <div class="command-box">
+
+        <span>root@system:~$</span>
+
+        <input
+          id="command"
+          type="text"
+          autocomplete="off"
+          autofocus
+          placeholder="type a command..."
+        >
+
+      </div>
+
+      <div id="output"></div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
